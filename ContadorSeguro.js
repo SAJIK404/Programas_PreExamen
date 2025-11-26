@@ -6,12 +6,12 @@ class ContadorSeguro {
 
   incrementar() {
     this.#valor += 1;
-    console.log("Valor incrementado a:" + this.#valor); 
+    console.log(`Valor incrementado a: ${this.#valor}`); 
   }
   
   decrementar() {
     this.#valor -= 1;
-    console.log("Valor decrementado a:" + this.#valor); 
+    console.log(`Valor decrementado a: ${this.#valor}`); 
   }
   
   getValor() {
@@ -19,14 +19,12 @@ class ContadorSeguro {
   }
 }
 
-function ejecutarContador() {
-  const contador = new ContadorSeguro(); 
-  
-  contador.incrementar();  
-  contador.incrementar();  
-  contador.decrementar();  
-  
-  console.log("Valor final con getValor(): " + contador.getValor()); 
-}
+const miContador = new ContadorSeguro();
 
-ejecutarContador();
+miContador.incrementar();  
+miContador.incrementar();  
+miContador.decrementar();  
+
+console.log("Valor final:", miContador.getValor()); 
+
+// console.log(miContador.#valor); esto deberia dar error
