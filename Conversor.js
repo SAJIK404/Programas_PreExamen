@@ -8,18 +8,20 @@ class Billetera {
     }
 
     convertirA(nuevaMoneda, tasaDeCambio) {
-        // cantidad * tasaDeCambio = cantidad convertida
-        let nuevaCantidad = this.#cantidad * tasaDeCambio;
-
-        // devolver una nueva billetera con la conversión
+        const nuevaCantidad = this.#cantidad * tasaDeCambio;
         return new Billetera(nuevaCantidad, nuevaMoneda);
+    }
+
+    getCantidad() {
+        return this.#cantidad;
+    }
+
+    getMoneda() {
+        return this.#moneda;
     }
 }
 
-// Código de prueba
 const miBilletera = new Billetera(1000, "MXN");
-
-// Supongamos que 1 MXN = 0.058 USD
 const billeteraUSD = miBilletera.convertirA("USD", 0.058);
 
-console.log("Cantidad convertida:", billeteraUSD);
+console.log(billeteraUSD.getCantidad(), billeteraUSD.getMoneda());
