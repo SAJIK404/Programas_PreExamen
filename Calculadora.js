@@ -1,5 +1,3 @@
-// Calculadora basica 
-// codigo para ser ejecutado en Google Apps Script
 
 class Calculadora{
   constructor(){
@@ -13,17 +11,17 @@ class Calculadora{
 
   restar(a,b){
     const res = a - b
-    Logger.log(a + " - " + b + " = " + res)
+    console.log(a + " - " + b + " = " + res)
   }
 
   multiplicar(a,b){
     const res = a * b
-    Logger.log(a + " * " + b + " = " + res)
+    console.log(a + " * " + b + " = " + res)
   }
 
   dividir(a,b){
     const res = a / b
-    Logger.log(a + " / " + b + " = " + res)
+    console.log(a + " / " + b + " = " + res)
   }
 
 }
