@@ -11,7 +11,7 @@ class Temporizador {
     }
 
     haTerminado() {
-        return this.#segundosRestantes <= 0;
+        return this.#segundosRestantes <= 0; // Devuelve true si this.#segundosRestantes 
     }
 }
 
