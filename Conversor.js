@@ -12,6 +12,7 @@ class Billetera {
         return new Billetera(nuevaCantidad, nuevaMoneda);
     }
 
+    // Usando getters como en el programa Conversor
     getCantidad() {
         return this.#cantidad;
     }
