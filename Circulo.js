@@ -8,12 +8,12 @@ class Circulo{
 
   getArea(){
     var res = Math.PI * this.radio * this.radio
-    Logger.log("El area del circulo con radio: " + this.radio + " es: " +  res.toFixed(2))
+    console.log("El area del circulo con radio: " + this.radio + " es: " +  res.toFixed(2))
   }
 
   getPerimetro(){
     var res = 2 * Math.PI * this.radio
-    Logger.log("El perimetro del circulo con radio: " + this.radio + " es: " +  res.toFixed(2))
+    console.log("El perimetro del circulo con radio: " + this.radio + " es: " +  res.toFixed(2))
   }
 
 }
