@@ -6,12 +6,12 @@ class ContadorSeguro {
 
   incrementar() {
     this.#valor += 1;
-    console.log(`Valor incrementado a: ${this.#valor}`); 
+    console.log("Valor incrementado a: " + this.#valor); 
   }
   
   decrementar() {
     this.#valor -= 1;
-    console.log(`Valor decrementado a: ${this.#valor}`); 
+    console.log("Valor decrementado a: " + this.#valor); 
   }
   
   getValor() {
